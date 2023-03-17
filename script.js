@@ -63,44 +63,7 @@ greenbg.addEventListener("click", function () {
   console.log('Your background color is '+ greenbg.className);
 });
 
-
-// I tried to use the "mouseout" event by calling this function, but then it closed once
-// I hover out of the img, and not being possible to select a color from the dropdown menu.
-
-/*function hide(){
-  let getUl = document.querySelector(".menu ul");
-
-  if (toggleNavStatus == true) {
-    getUl.style.visibility = "hidden";
-    toggleNavStatus = false;
-  }
-};
-
-toggleMenu.addEventListener("mouseout", hide);
-
-
-//Here I was trying to get the color on the console and replace it by the previous one
-// but I couldn't find out how to do it.
-
-let colorPicked = document.getElementsByTagName('li');
-Array.from('colorPicked').forEach(function(item){
-  console.log(item);
-}); 
-
-colorPicked.addEventListener("click", () => {
-  let color = document.getElementsByName('backgroundColor');
-  color.forEach((backgroundColor) => {
-    if (backgroundColor.checked) {
-      console.log('${backgroundColor.class}');
-    }
-  })
-  });
-*/
-
-// To assing events to the keyboard key numbers, I created this function. I could 
-// call the function using the "onkeypress="return keySwitch(event)" on an <input> tag
-// and it worked, but if I used it on the <li> tag it didn't work. 
-
+// To assing events to the keyboard key numbers, I created this function. 
 function keySwitch(data){
   if(data.keyCode == 49){
     bgrColor.style.background = "#f1f1f1";
